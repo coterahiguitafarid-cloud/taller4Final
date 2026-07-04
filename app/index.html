@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D1 Supermercados</title>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.4/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="../assets/img/logo.jpg" rel="icon" type="image/svg+xml" />
+</head>
+<body class="pt-5">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="bi bi-shop me-2"></i>D1</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="admin.html">Admin</a></li>
+          <li class="nav-item"><a class="nav-link" href="cliente.html">Cliente</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="registro.html">Registro</a></li>
+          <li class="nav-item"><a class="nav-link" href="recuperar.html">Recuperar</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../assets/img/img1.png" class="d-block w-100" alt="Ahorros D1" />
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-4">
+            <h1>Precios bajos todos los días</h1>
+            <p>Encuentra productos básicos y ofertas cercanas a ti.</p>
+            <a href="registro.html" class="btn btn-danger me-2">Abrir cuenta</a>
+            <a href="cliente.html" class="btn btn-outline-light">Ver ofertas</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/img/img2.webp" class="d-block w-100" alt="Tienda D1" />
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-4">
+            <h1>Tu tienda cercana</h1>
+            <p>Compras rápidas y productos esenciales a los mejores precios.</p>
+            <a href="login.html" class="btn btn-danger me-2">Ingresar</a>
+            <a href="registro.html" class="btn btn-outline-light">Únete</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/img/img3.webp" class="d-block w-100" alt="Ofertas D1" />
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-4">
+            <h1>Marcas propias D1</h1>
+            <p>Calidad práctica</p>
+            <a href="cliente.html" class="btn btn-danger me-2">Mi compra</a>
+            <a href="registro.html" class="btn btn-outline-light">Conocer más</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+    <section class="py-5 bg-white">
+      <div class="container">
+        <div class="row align-items-center gy-4 mb-4">
+          <div class="col-md-6 text-center text-md-start">
+            <h2 class="h3 mb-3">Nuestros aliados</h2>
+            <p class="mb-0">Trabajamos con marcas y tiendas cercanas para dar siempre la mejor opción.</p>
+          </div>
+          <div class="col-md-3 text-center">
+            <img src="../assets/img/logo.jpg" class="img-fluid rounded shadow-sm" alt="Logo aliado 1" />
+          </div>
+          <div class="col-md-3 text-center">
+            <img src="../assets/img/logo2.jpeg" class="img-fluid rounded shadow-sm" alt="Logo aliado 2" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-danger">
+              <div class="card-body">
+                <h5 class="card-title">Ahorro diario</h5>
+                <p class="card-text">Frutas, verduras y despensa con precios bajos todos los días.</p>
+                <span class="badge bg-danger">Precio mínimo</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-warning">
+              <div class="card-body">
+                <h5 class="card-title">Compra rápida</h5>
+                <p class="card-text">Locales cercanos diseñados para tus compras sin complicaciones.</p>
+                <span class="badge bg-warning text-dark">Rápido</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-secondary">
+              <div class="card-body">
+                <h5 class="card-title">Marca propia</h5>
+                <p class="card-text">Productos de calidad práctica con el respaldo D1.</p>
+                <span class="badge bg-secondary">Garantizado</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-dark text-light py-5">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <h5>EquiEvent</h5>
+          <p>Un festival ecuestre dedicado a la innovación, el deporte y la comunidad equina.</p>
+        </div>
+        <div class="col-md-4">
+          <h6>Enlaces</h6>
+          <ul class="list-unstyled">
+            <li><a class="text-decoration-none text-light" href="admin.html">Panel Admin</a></li>
+            <li><a class="text-decoration-none text-light" href="cliente.html">Panel Cliente</a></li>
+            <li><a class="text-decoration-none text-light" href="registro.html">Registro</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6>Contacto</h6>
+          <p class="mb-1"><i class="bi bi-telephone-fill"></i> +52 55 1234 5678</p>
+          <p><i class="bi bi-envelope-fill"></i> info@</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

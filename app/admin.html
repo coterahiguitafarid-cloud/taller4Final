@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+  <html lang="es-CO">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D1 Supermercados - Admin</title>
+  <meta name="author" content="Farid Cotera">
+  <meta name="description" content="Panel administrativo de D1 Supermercados.">
+  <meta name="theme-color" content="#FF0000">
+
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="../assets/img/logo.jpg" type="image/svg+xml">
+</head>
+<body class="pt-5 bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="bi bi-shop me-2"></i>D1</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="admin.html">Admin</a></li>
+          <li class="nav-item"><a class="nav-link" href="cliente.html">Cliente</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="registro.html">Registro</a></li>
+          <li class="nav-item"><a class="nav-link" href="recuperar.html">Recuperar</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <aside class="col-md-3 d-none d-md-block bg-white vh-100 pt-5 border-end">
+        <div class="px-3 pt-4">
+          <h5>Panel D1</h5>
+          <ul class="nav flex-column mt-4">
+            <li class="nav-item"><a class="nav-link active" href="#"><i class="bi bi-bar-chart-line me-2"></i>Resumen</a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-shop me-2"></i>Tiendas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-box-seam me-2"></i>Inventario</a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-file-earmark-text me-2"></i>Reportes</a></li>
+          </ul>
+        </div>
+      </aside>
+      <main class="col-12 col-md-9 pt-5">
+        <div class="container-fluid py-4">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <div>
+              <h1 class="h3">Panel Administrativo</h1>
+              <p class="mb-0">Farid controla la red D1 y supervisa precios bajos.</p>
+            </div>
+            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#editarModal"><i class="bi bi-pencil-square"></i> Editar tienda</button>
+          </div>
+          <div class="d-flex flex-wrap gap-3 align-items-center mb-4">
+            <div class="badge bg-danger text-white py-3 px-4 rounded-3 d-flex align-items-center">
+              <i class="bi bi-shop fs-4 me-2"></i> D1 Supermercados
+            </div>
+            <div class="border rounded-3 p-2 bg-white shadow-sm">
+              <img src="../assets/img/logo.jpg" width="72" alt="Logo D1" />
+            </div>
+            <div class="border rounded-3 p-2 bg-white shadow-sm">
+              <img src="../assets/img/logo2.jpeg" width="72" alt="Logo aliado" />
+            </div>
+            <div class="badge bg-secondary text-white py-3 px-4 rounded-3 d-flex align-items-center">
+              <i class="bi bi-bootstrap-fill fs-4 me-2"></i> Bootstrap
+            </div>
+          </div>
+          <div class="row g-3 mb-4">
+            <div class="col-md-3">
+              <div class="card shadow-sm border-danger">
+                <div class="card-body">
+                  <h6>Tiendas activas</h6>
+                  <p class="display-6 mb-1">124</p>
+                  <span class="badge bg-danger">Cercanas</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card shadow-sm border-warning">
+                <div class="card-body">
+                  <h6>Ventas hoy</h6>
+                  <p class="display-6 mb-1">$56,200</p>
+                  <span class="badge bg-warning text-dark">Últimas 24h</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card shadow-sm border-success">
+                <div class="card-body">
+                  <h6>Ahorro D1</h6>
+                  <p class="display-6 mb-1">$120M</p>
+                  <span class="badge bg-success">Familias</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card shadow-sm border-info">
+                <div class="card-body">
+                  <h6>Clientes activos</h6>
+                  <p class="display-6 mb-1">19,800</p>
+                  <span class="badge bg-info text-dark">Barrio</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="card-title mb-0">Tiendas</h5>
+                <span class="badge bg-secondary">Gestión</span>
+              </div>
+              <div class="table-responsive">
+                <table class="table table-striped table-hover align-middle mb-0">
+                  <thead class="table-dark">
+                    <tr>
+                      <th>ID</th>
+                      <th>Tienda</th>
+                      <th>Zona</th>
+                      <th>Estado</th>
+                      <th>Acciones</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>001</td>
+                      <td>D1 Villa Nueva</td>
+                      <td>Occidente</td>
+                      <td><span class="badge bg-success">Abierta</span></td>
+                      <td>
+                        <button class="btn btn-sm btn-outline-danger me-1" data-bs-toggle="modal" data-bs-target="#editarModal"><i class="bi bi-pencil"></i></button>
+                        <button class="btn btn-sm btn-outline-secondary"><i class="bi bi-trash"></i></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>002</td>
+                      <td>D1 Los Alpes</td>
+                      <td>Norte</td>
+                      <td><span class="badge bg-warning text-dark">Revisión</span></td>
+                      <td>
+                        <button class="btn btn-sm btn-outline-danger me-1" data-bs-toggle="modal" data-bs-target="#editarModal"><i class="bi bi-pencil"></i></button>
+                        <button class="btn btn-sm btn-outline-secondary"><i class="bi bi-trash"></i></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>003</td>
+                      <td>D1 La Esperanza</td>
+                      <td>Sur</td>
+                      <td><span class="badge bg-success">Abierta</span></td>
+                      <td>
+                        <button class="btn btn-sm btn-outline-danger me-1" data-bs-toggle="modal" data-bs-target="#editarModal"><i class="bi bi-pencil"></i></button>
+                        <button class="btn btn-sm btn-outline-secondary"><i class="bi bi-trash"></i></button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <div class="modal fade" id="editarModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-danger text-white">
+          <h5 class="modal-title">Editar tienda</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Nombre tienda</label>
+              <input type="text" class="form-control" value="D1 Villa Nueva" />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Zona</label>
+              <input type="text" class="form-control" value="Occidente" />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Estado</label>
+              <select class="form-select">
+                <option selected>Abierta</option>
+                <option>Revisión</option>
+                <option>Cierre</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-danger">Guardar cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
